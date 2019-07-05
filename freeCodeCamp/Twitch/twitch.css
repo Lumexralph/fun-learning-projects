@@ -1,0 +1,81 @@
+@import 'https://fonts.googleapis.com/css?family=Audiowide|Bungee+Shade';
+
+body {
+	background-color: #fcf8e3;
+}
+
+#header {
+	text-align: center;
+	font-family:  'Audiowide', cursive;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+span {
+	color: blueviolet;
+	font-family: 'Bungee Shade', cursive;
+}
+
+#displayStreamers {
+	color: lightcyan;
+}
+
+.user {
+	display: inline-block;
+	font-size: x-large;
+	margin-left: 50px;
+}
+
+.status {
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    margin-left: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.statusOffline {
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    margin-left: 60px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+p {
+	display: inline;
+}
+
+.live {
+	color: aquamarine;
+}
+
+#onlineLogo {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.col-xs-12, .col-md-12 {
+	border: 2px solid black;
+    height: 7.5em;
+    margin: 3px;
+    background-color: darkslategray;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+img {
+	margin-top: 3px;
+    border: 2px solid white;
+}
+footer {
+	text-align: center;
+}

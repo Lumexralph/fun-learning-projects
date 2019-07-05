@@ -1,0 +1,23 @@
+// using !default defines the variable with that value unless it has already been assigned
+
+$mq-1: 48em !default; /* 768px / 16px = 48em */
+
+// By subtracting 0.0625 from your mq-1 variable, you are basically removing a pixel. You remove the pixel so that the next media query mixin will not overlap.
+
+@mixin extra-small-only {
+  @media only screen and (max-width : $mq-1 - 0.0625) {
+    @content;
+  }
+}
+
+@mixin small-and-above {
+  @media only screen and (min-width : $mq-1) {
+    @content;
+  }
+}
+
+@mixin medium-and-above {
+  @media only screen and (min-width : $mq-1 + 14) {
+    @content;
+  }
+}

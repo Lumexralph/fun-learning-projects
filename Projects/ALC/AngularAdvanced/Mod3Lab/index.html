@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular Bootstrap and Animation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body ng-controller="labController as vm">
+  <div class="container">
+    <h1>Bootstrap and Animation</h1>
+    <div class="form-group">
+      <button type="button" uib-tooltip="Click this button to do something amazing" class="btn btn-primary">Hover to show Tooltip</button>
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-default" uib-popover="Popover content goes here" popover-title="Popover Title">Click to show Popover</button>
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-warning" ng-click="vm.addWarning()">Add Warning</button>
+      <button type="button" class="btn btn-danger" ng-click="vm.addDanger()">Add Danger</button>
+    </div>
+
+    <uib-alert class="alert-animation" ng-repeat="alert in vm.alerts" type="{{alert.type}}"  close="vm.dismissAlert($index)">{{alert.text}}</uib-alert>
+
+    <!-- date picker -->
+    <div class="form-group" ng-controller="DatePickerController">
+      <h4>Pick a date</h4>
+      <div class="date-pick-frame">
+        <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
+        <pre>Selected date is: <em>{{dt | date: 'mediumDate'}}</em></pre>
+      </div>     
+      
+    </div>    
+    
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+  <!-- Angular Animate  -->
+  <!-- no configuration to your controllers or views is required to use ng-Animate. Instead, what ng-Animate does is applies specific classes to elements in certain states of transition (for instance, when they are displayed via directive instantiation or ng-if). These classes have names like ng-enter, ng-enter-active, ng-leave, and ng-leave-active. A full list of the 'animation aware' features of Angular and what classes are applied in those situations is contained with Angular's ngAnimate reference documentation. -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <!-- angular bootstrap and template -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+  <!-- ***************************************** -->
+  <script src="./app/app.js"></script>
+  <script src="./app/datePickerController.js"></script>
+  <script src="./app/labController.js"></script>
+</body>
+
+</html>

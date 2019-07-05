@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>Contact Manager App</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Personal information</legend>
+      <label for="name">
+        Name :
+        <input type="text" id="name" required>
+      </label>
+      <label for="email">
+        Email :
+        <input type="text" id="email" required>
+      </label>
+      <br>
+      <button>Add New Contact</button>
+    </fieldset>
+  </form>
+  <p>List of contacts</p>
+  <div id="contacts"></div>
+  <script src="js/script.js"></script>  
+</body>
+</html>

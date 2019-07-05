@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="weatherPro.css">  
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="wrapper"> 
+    <!-- A wrapper for CSS-design -->
+    <h1>Local Weather</h1>
+    <h2 id="displayDate"></h2>
+    <p id="p">Weather condition in your <span class='italic'>exact</span> location?
+    </p>
+    
+    <!-- Here we will show the results from Weather API -->
+    <div id="wrappCloud">
+      <canvas id="showCloud" width="64" height="64"></canvas>
+      <p id="result"></p> 
+      <p id="describe"></p>
+    </div>     
+
+    <!-- Simple button to toggle C and F -->
+    <button id="showTemp" value="off">°F</button>
+
+    <div id="wrapperFooter">
+      <p id="pressure" class="display"></p>
+      <p id="humidity" class="display"></p>
+      <p id="wind" class="display"></p>
+      <p id='location' class="display"></p>
+    </div>
+    
+
+  </div>
+  <footer>
+      <p id="footer" class="display">Lumex Creations &copy. All rights reserved</p><br>
+      <P class="display"><a href="http://codepen.io/Lumexralph/full/zveeqa" target='.blank\'>About Lumex Design Studio</a></P>
+      <p class="display">Contact us: olumideralph@gmail.com</p>
+    </footer>
+  </div>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+<script src="weatherPro.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,142 @@
+.padding-10 {
+  padding: 20px 0;
+}
+
+.padding-20 {
+  align-content: center;
+}
+
+.centralize {
+  margin: auto !important;
+}
+
+.ui.divided {
+  color: red !important;
+}
+
+.ui.inverted.divided.grid:not([class*="vertically divided"])>.column:not(.row), .ui.inverted.divided.grid:not([class*="vertically divided"])>.row>.column {
+  -webkit-box-shadow: -1px 0 0 0 rgba(255,255,255,.5);
+  box-shadow: -1px 0 0 0 rgba(255,255,255,.5);
+}
+
+.reda {
+  color: red;
+}
+
+.social-icon {
+  width: 50.07px;
+  height: 50px;
+  left: 1199.67px;
+  top: 2907px;
+}
+
+.wrapcontent {
+  display: flex;
+}
+
+.footercolour {
+  background: #c4c4c4 !important;
+}
+
+.footertext {
+  color: #27494a !important;
+  width: 239.19px;
+  height: 25.05px;
+  left: 128.18px;
+  top: 2850px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+}
+
+.socialicon {
+  color: #27494a !important;
+  font-size: 50px !important;
+}
+
+.thegridclass {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thegridclass2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.mm {
+  padding: 70px 40px 0 0;
+}
+
+.footer2-text {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: lighter !important;
+  line-height: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #27494a;
+  text-align: center;
+}
+
+.footer2-heart-icon {
+  font-size: 25px !important;
+  font-weight: lighter !important;
+}
+
+.footer2 {
+  position: fixed !important;
+  width: 100%;
+  bottom: 0;
+  margin-top: 0 !important;
+  background: #e5e5e5 !important;
+}
+
+@media (max-width: 768px) {
+  .thegridclass {
+    display: block;
+    text-align: left;
+  }
+  .mm {
+    padding: unset;
+  }
+  .socialicon {
+    font-size: 25px !important;
+  }
+  .footertext {
+    font-size: 12px;
+    letter-spacing: unset;
+  }
+  .footer2-text {
+    font-size: 10px;
+  }
+  .footer2-heart-icon {
+    font-size: 12.5px !important;
+    font-weight: lighter !important;
+  }
+  #smally {
+    padding-bottom: unset !important;
+  }
+  .padding-10 {
+    padding: 10px 0;
+  }
+  footer {
+    .ui.stackable.grid>.wide.column {
+      width: 31.25%!important;
+    }
+    .ui.stackable.divided:not(.vertically).grid>.column:not(.row) {
+      border-top: unset;
+    }
+  }
+  @media (max-width: 375px) {
+    .socialicon {
+      font-size: 15px !important;
+    }
+  }
+}

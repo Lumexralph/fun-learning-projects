@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+recursive-include ogundelescrumy/static *
+recursive-include ogundelescrumy/migrations *
+recursive-include ogundelescrumy *
+recursive-include ogundelescrumy/templates *
+recursive-include docs *

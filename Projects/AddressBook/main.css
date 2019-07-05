@@ -1,0 +1,158 @@
+body {
+  background-color: silver;
+}
+
+.heading-1 {
+  color: cadetblue;
+}
+.heading-2 {
+  color: darkgray;
+}
+
+.contact {
+  background-color: #7199ab;
+  color: floralwhite;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.active,
+.contact:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: darkblue;
+}
+
+/* ############ add new contact */
+/* Style inputs, select elements and textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+.form-button {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Theme */
+.btn-cancel {
+  background-color: rgb(236, 99, 99);
+}
+
+.btn-cancel:hover {
+  background-color: rgb(156, 46, 46);
+}
+.btn-submit {
+  background-color: rgb(100, 123, 223);
+}
+.btn-submit:hover {
+  background-color: rgb(35, 35, 170);
+}
+.form-add {
+  margin-top: 30px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border: unset;
+}
+.btn-gap {
+  margin-left: 5px;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* width 50 % */
+.col-50 {
+  float: left;
+  width: 48%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ContactAdded display message */
+.display {
+  display: none;
+}
+
+/* footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container {
+    width: unset;
+  }
+}

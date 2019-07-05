@@ -1,0 +1,49 @@
+<div class="page-header">
+  <h1>Search</h1>
+
+  <p>Find images using Bing Image Cognitive Search.</p>
+
+  <div class="form-group">
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="searchInput" #searchInput />
+    </div>
+    <button class="btn btn-default" type="submit" (click)="search(searchInput.value)">Search</button>
+  </div>
+</div>
+<div *ngIf="searchResults">
+  <h2><b>Selected Photo</b></h2>
+  <div class="currentItem card" *ngIf="currentAnalytics || isAnalyzing">
+    <img src="{{currentItem?.thumbnailUrl}}" alt="cognitive image result" />
+    <div *ngIf="!isAnalyzing">
+      <h4><b>{{currentAnalytics?.description.captions[0].text}}</b></h4>
+      <div>
+        <span class="tag label" [ngClass]="{'label-default': tag.confidence >= .75, 'label-warning': tag.confidence >= .5 && tag.confidence < .75, 'label-danger': tag.confidence < .5}" *ngFor="let tag of currentAnalytics?.tags">{{tag.name}}</span>
+      </div>
+      <!-- handle people and their numbers -->
+      <div *ngIf="currentAnalytics?.faces.length > 0">
+        <div *ngFor="let person of currentAnalytics?.faces">
+          <span>
+            <p>{{person.age}} - {{person.gender}}</p>
+          </span>
+        </div>
+        <p>People information from right to left.</p>
+      <p><b>Total number of people: {{currentAnalytics?.faces.length}}</b></p>
+      </div>      
+
+    </div>
+    <div *ngIf="isAnalyzing">
+      <h4>Analyzing Photo</h4>
+    </div>
+  </div>
+  <h4 class="no-results" *ngIf="!currentAnalytics && !isAnalyzing">Select a photo to analyze.</h4>
+</div>
+<br />
+<br />
+<h2><b>Search Results</b></h2>
+<div class="results" *ngIf="searchResults">
+  <div class="card" *ngFor="let result of searchResults" (click)="analyze(result)">
+    <img src="{{result?.thumbnailUrl}}" alt="images" />
+  </div>
+</div>
+<h4 class="no-results" *ngIf="!searchResults && !isSearching">Search for images to display results here.</h4>
+<h4 class="no-results" *ngIf="isSearching">Loading Search Results....</h4>

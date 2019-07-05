@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Tony's Pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+<body ng-controller="menuController">
+    <div class="container">
+        <h1>Tony's Pizza</h1>
+        <h2>{{ model.title }}</h2>
+        <div>
+            <label for=""><input type="radio" name="category" ng-click="changeMainDish('Cheese Pizza',' $15.22')" /> Cheese Pizza</label>
+        </div>
+        <div>
+                <label for=""><input type="radio" name="category" ng-click="changeMainDish('Pepperoni Pizza', '$20.00')" /> Pepperoni Pizza</label>
+        </div>
+        <div>
+                <label for=""><input type="radio" name="category" ng-click="changeMainDish('BBQ Chicken Pizza', '$25.00')" /> BBQ Chicken Pizza</label>
+        </div>
+        <div>
+                <label for=""><input type="radio" name="category" ng-click="changeMainDish('Margherita Pizza', '$12.00')" /> Margherita Pizza</label>
+        </div>
+        <div>
+                <label for=""><input type="radio" name="category" ng-click="changeMainDish('Combo Pizza', '$34.00')" /> Combo Pizza</label>
+        </div>
+
+        <div>
+            <h3>Selected Item</h3>
+            <pre>{{ model.mainDish.item }}</pre>
+        </div>
+        <div>
+            <h3></h3>
+            <!-- If it's ng-model, it needs a dot in it. -->
+            <textarea class="form-control" ng-model="model.specialInstructions"></textarea>
+            <div>
+                <h3>Order Summary</h3>
+                <pre>{{model.mainDish.item}} {{model.mainDish.price}}- {{model.specialInstructions}}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/controller/menuController.js"></script>
+</body>
+
+</html>

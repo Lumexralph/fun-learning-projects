@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700,400);
+.body {
+  background-color: #a2a9b0;
+  color: black;
+}
+
+#header {
+  background-color: rgba(125, 168, 174, 0.6);
+  margin-top: -1.35em;
+  padding: 0.1px 0px 0.1px 10px;
+  border-left: #ceaea3 solid 6px;
+  border-style: inset;
+  text-shadow: 2px 2px 4px silver;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+#displayData {
+  margin-top: 10px;
+}
+
+#result {
+  color: #410d0d;
+}
+
+#result:hover {
+  text-decoration: none;
+  background-color: #ccc;
+  box-shadow: 2px 2px 2px 2px white;
+}
+
+#inputText {
+  background-color: #eee;
+  width: 15em;
+  height: 2.5em;
+  font-size: 1.1em;
+  padding-left: 6px;
+}
+
+button {
+  height: 38px;
+}
+
+
+/*Styling the footer*/
+
+footer {
+  background-color: gainsboro;
+  bottom: -350px;
+  height: 150px;
+  margin: 0px 0px 0px -13px;
+  text-align: center;
+  text-shadow: 3px 3px 4px white;
+  color: teal;
+  font-family: cursive;
+}

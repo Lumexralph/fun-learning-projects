@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Address Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="addressBook">
+          <h1 class="heading-1">AddressBook</h1>
+          <h2 class="heading-2">Contacts</h2>
+      
+          <div id="contacts">
+            <!-- will display contacts -->
+            <h4>Empty, add contacts!</h4>
+          </div>
+          <div id="addContact">
+            <button id="addNewContact" class="btn-submit form-add">Add New Contact</button>
+            <span class="contactAdded display">
+                <h5>Contact Added!</h5></span>
+      
+            <!-- add contact -->
+            <form class="display" name="newContact">
+              <div class="row">
+                <div class="col-25">
+                  <label for="firstName">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="firstName" name="firstName" placeholder="Your name.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lastName">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lastName" name="lastName" placeholder="Your last name.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="email" placeholder="Your email.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your phone number.." required pattern="[0-9]{11}">
+                  <span>11 digits number e.g 08111133344</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="address">Address</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="address" name="address" placeholder="Your street.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">City</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="city" name="city" placeholder="City.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="state">State</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="state" name="state" placeholder="State.." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-50">
+                  <button type="submit" id="submit" class="form-button btn-submit">Add</button>
+                </div>
+                <div class="col-50 btn-gap">
+                  <button type="button" id="cancel" class="form-button btn-cancel">Cancel
+                      </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <footer>
+          <p>By LumexRalph for Andela</p>
+          <span>&copy; 2018</span></footer>
+      </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

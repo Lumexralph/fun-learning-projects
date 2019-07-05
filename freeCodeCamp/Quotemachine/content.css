@@ -1,0 +1,109 @@
+/* This is just a small css to style the buttons and divs*/
+
+/*picking div to display quote*/
+body {
+	background-image: url('quoteimg.jpg');
+
+}
+
+#headbar {
+	height: 135px;
+	width: 240px;
+	background-image: url('navbarimage.png');
+	opacity: 0.6;
+	border-radius: 20%;
+	background-size: contain;
+	border: 5px solid #6B8E23;
+    margin-left: 200px;
+    box-shadow: 3px 3px 3px white;
+}
+#headerText {
+	color: #BDB76B;
+	text-shadow: 2px 0px 2px #556B2F;
+	margin-left: 200px;
+	letter-spacing: 3px;
+	margin-top: 2px;
+}
+#paraText {
+	text-align: justify;
+	margin-left: 200px;
+	color: #FFD700;
+	text-shadow: 2px 2px black;
+	letter-spacing: 2px;
+	line-height: 1.0;
+	font-size: 1.2em;
+	margin-top: -20px;
+}
+#innerHeaderText {
+	color: #D2691E;
+}
+#container2 {
+	margin-left: 200px;
+}
+#quoteDisplay {
+	height: 190px;
+	width: 600px;
+	background-image: url('displayimage.jpg');
+	border-left: 2px solid #6B8E23;
+	border-radius: 20%;
+	margin-top: -10px;
+}
+
+#quoteDisplay p {
+   font-size: 1.3em;
+   padding: 27px 17px 0 10px;
+   /*text-shadow: 0px 2px gray;*/
+}
+
+#quoteButton {
+	display: inline;
+}
+
+input {
+	background-image: url('quoteicon.png');
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	display: inline;
+	position: relative;
+	background-size: cover;
+	box-shadow: 2px 2px 1px black;
+	margin-left: 60px;
+	border-radius: 15%;
+}
+
+#tweetButton {
+    margin-top: 11px;
+    margin-left: 20px;
+	display: inline;
+	position: absolute;
+}
+
+#about {
+	color: white;
+    margin-left: 30px;
+}
+
+#about:link {
+    color: #FF0000;
+}
+
+/* mouse over link */
+#about:hover {
+    color: #FF0000;
+}
+
+#footer {
+	text-align: center;
+	margin: 80px 0 0 600px;
+	position: absolute;
+}
+
+#footer b {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+#footer i {
+	color: #00FFFF;
+}

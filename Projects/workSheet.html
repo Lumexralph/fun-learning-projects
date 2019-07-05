@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Playground</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<p>Normal HTML here.</p>
+	<svg xmlns = "http://www.w3.org/2000/svg">
+		<circle r="50" cx="50" cy= "50" fill = "red"/>
+		<rect x = "120" y = "5" width = "90" height = "90"
+			   stroke = "blue" fill = "none" />
+	</svg>
+	
+	<form action="example/submit.html">
+		Name: <input type="text" tabindex = 1 name="name"><br>
+		Password: <input type="password" tabindex = 3 name="password"><br>
+		<button type="submit">Log in</button>
+	</form>
+
+	<input type="text" class="length">length: <span id = "length">0</span>
+
+	<input type="checkbox" id="purple">
+	<label for="purple">Make this page purple</label>
+
+	Color:
+	<input type="radio" name="color" value="mediumpurple"> Purple
+	<input type="radio" name="color" value="green"> Green
+	<input type="radio" name="color" value="silver"> Silver
+	<input type="radio" name="color" value="gold"> Gold
+
+	Notes: <select id="list"></select>
+	<button id = "buttonList">new</button><br>
+	<textarea id="currentnote" style="width: 100%; height: 10em"></textarea>
+
+	<script type="text/javascript">
+	//making a request
+	//create an instance of the XMLHttpRequest by Microsoft to get it
+	let req = new XMLHttpRequest();
+	//open the communication, true to make it asychronous
+	req.open("GET", "http://eloquentjavascript.net/author");
+	//the intance has a load event 
+	//add event listener to know when the data is ready
+	//set the request header
+	req.setRequestHeader("Accept", "application/json");
+	req.addEventListener("load", function() {
+		console.log(req.responseText);
+	});
+
+	req.send(null);
+
+	let text = document.querySelector(".length");
+	let output = document.querySelector('#length');
+	text.addEventListener("input", function() {
+		output.textContent = text.value.length;
+	});
+
+	//checkbox
+	let checkbox = document.querySelector('#purple');
+		checkbox.addEventListener("change", function() {
+			document.body.style.background = checkbox.checked ? "blue" : "";
+		});
+
+	const buttons = document.getElementsByName("color");
+
+	function setColor(event) {
+		document.body.style.background = event.target.value;
+	}
+	buttons.forEach((el) => el.addEventListener("change", setColor));
+
+	//textarea
+	const list = document.querySelector('#list');
+
+	function addToList(name) {
+		let option = document.createElement("option");
+		option.textContent = name;
+		list.appendChild(option);
+	}
+
+	let notes = JSON.parse(localStorage.getItem("notes"))  || {"shopping list": ""}
+
+	for (let name in notes) {
+		if (notes.hasOwnProperty(name)) {
+			addToList(name);
+		}
+	}
+
+	function saveToStorage() {
+		localStorage.setItem("notes", JSON.stringify(notes));
+	}
+
+	let current = document.querySelector('#currentnote');
+	current.value = notes[list.value];
+
+	list.addEventListener("change", function() {
+		current.value = notes[list.value];
+	});
+
+	current.addEventListener("change", function() {
+		notes[list.value] = current.value;
+		saveToStorage();
+	});
+
+	function addNote() {
+		let name = prompt("Note name", "");
+		if(!name) return;
+		if(!notes.hasOwnProperty(name)) {
+			notes[name] = "";
+			addToList(name);
+			saveToStorage();
+		}
+		list.value = name;
+		current.value = notes[name];
+	}
+
+	const buttonList = document.querySelector('#buttonList');
+
+	buttonList.addEventListener("click", addNote);
+	</script>
+</body>
+</html>

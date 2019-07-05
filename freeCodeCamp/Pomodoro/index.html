@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pomodoro Timer</title>
+	<link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+	<div id="container">
+		<!--- show the runnning session-->
+		<div id="mainDisplay">
+			<p id="main">25</p>			
+		</div>
+		<!--session display buttons-->
+		<div class="sessionButton">
+			<button class="timerButton">start</button>
+			<button class="timerButton">pause</button>
+			<button class="timerButton">reset</button>
+		</div>
+
+		<div class="workBreak">
+				<!--- set break time-->
+			<div id="breakDisplay">
+				<p id="break">5</p>
+				<button id="decreaseBreak">-</button>
+				<button id="increaseBreak">+</button>
+			</div>
+
+			<!--- set work-->
+			<div id="workDisplay">
+				<p id="work">25</p>
+				<button id="decreaseWork">-</button>
+				<button id="increaseWork">+</button>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="pomodoro.js"></script>
+	
+</body>
+</html>

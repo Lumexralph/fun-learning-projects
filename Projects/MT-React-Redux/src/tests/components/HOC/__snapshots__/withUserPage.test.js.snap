@@ -1,0 +1,755 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for higher order component userpage Should call change event on username input field 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Requests
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/request/create"
+            onClick={[Function]}
+          >
+            Make A Request
+          </a>
+        </li>
+        <li>
+          <button
+            className="btn nav-link nav-btn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "inherit",
+              }
+            }
+            type="button"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="modal"
+    id="request-modal"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <h2>
+          FixZit
+        </h2>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <h3>
+          Create
+           request
+        </h3>
+        <div>
+          
+        </div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="title"
+          >
+            <input
+              defaultValue=""
+              id="request-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Your request title.."
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="dept"
+          >
+            Department
+            <select
+              defaultValue=""
+              id="dept"
+              name="department"
+              onChange={[Function]}
+            >
+              <option
+                value="maintenance"
+              >
+                Maintenance
+              </option>
+              <option
+                value="Repairs"
+              >
+                Repairs
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="content"
+          >
+            <textarea
+              defaultValue=""
+              id="subject"
+              name="content"
+              onChange={[Function]}
+              placeholder="Tell us about your request.."
+              required={true}
+              style={
+                Object {
+                  "height": "200px",
+                }
+              }
+            />
+          </label>
+          <button
+            className="btn btn-send"
+            id="sendRequest"
+            type="submit"
+          >
+            Send
+             Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for higher order component userpage Should have an onSubmit meethod called in rendered component 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Requests
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/request/create"
+            onClick={[Function]}
+          >
+            Make A Request
+          </a>
+        </li>
+        <li>
+          <button
+            className="btn nav-link nav-btn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "inherit",
+              }
+            }
+            type="button"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="modal"
+    id="request-modal"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <h2>
+          FixZit
+        </h2>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <h3>
+          Create
+           request
+        </h3>
+        <div>
+          
+        </div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="title"
+          >
+            <input
+              defaultValue=""
+              id="request-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Your request title.."
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="dept"
+          >
+            Department
+            <select
+              defaultValue=""
+              id="dept"
+              name="department"
+              onChange={[Function]}
+            >
+              <option
+                value="maintenance"
+              >
+                Maintenance
+              </option>
+              <option
+                value="Repairs"
+              >
+                Repairs
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="content"
+          >
+            <textarea
+              defaultValue=""
+              id="subject"
+              name="content"
+              onChange={[Function]}
+              placeholder="Tell us about your request.."
+              required={true}
+              style={
+                Object {
+                  "height": "200px",
+                }
+              }
+            />
+          </label>
+          <button
+            className="btn btn-send"
+            id="sendRequest"
+            type="submit"
+          >
+            Send
+             Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for higher order component userpage Should have an onSubmit meethod called in rendered component 2`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Requests
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/request/create"
+            onClick={[Function]}
+          >
+            Make A Request
+          </a>
+        </li>
+        <li>
+          <button
+            className="btn nav-link nav-btn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "inherit",
+              }
+            }
+            type="button"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="modal"
+    id="request-modal"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <h2>
+          FixZit
+        </h2>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <h3>
+          Create
+           request
+        </h3>
+        <div>
+          
+        </div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="title"
+          >
+            <input
+              id="request-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Your request title.."
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="dept"
+          >
+            Department
+            <select
+              id="dept"
+              name="department"
+              onChange={[Function]}
+            >
+              <option
+                value="maintenance"
+              >
+                Maintenance
+              </option>
+              <option
+                value="Repairs"
+              >
+                Repairs
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="content"
+          >
+            <textarea
+              id="subject"
+              name="content"
+              onChange={[Function]}
+              placeholder="Tell us about your request.."
+              required={true}
+              style={
+                Object {
+                  "height": "200px",
+                }
+              }
+            />
+          </label>
+          <button
+            className="btn btn-send"
+            id="sendRequest"
+            type="submit"
+          >
+            Send
+             Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for higher order component userpage Should return another component 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Requests
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/request/create"
+            onClick={[Function]}
+          >
+            Make A Request
+          </a>
+        </li>
+        <li>
+          <button
+            className="btn nav-link nav-btn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "inherit",
+              }
+            }
+            type="button"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="modal"
+    id="request-modal"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <h2>
+          FixZit
+        </h2>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <h3>
+          Create
+           request
+        </h3>
+        <div>
+          
+        </div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="title"
+          >
+            <input
+              defaultValue=""
+              id="request-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Your request title.."
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="dept"
+          >
+            Department
+            <select
+              defaultValue=""
+              id="dept"
+              name="department"
+              onChange={[Function]}
+            >
+              <option
+                value="maintenance"
+              >
+                Maintenance
+              </option>
+              <option
+                value="Repairs"
+              >
+                Repairs
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="content"
+          >
+            <textarea
+              defaultValue=""
+              id="subject"
+              name="content"
+              onChange={[Function]}
+              placeholder="Tell us about your request.."
+              required={true}
+              style={
+                Object {
+                  "height": "200px",
+                }
+              }
+            />
+          </label>
+          <button
+            className="btn btn-send"
+            id="sendRequest"
+            type="submit"
+          >
+            Send
+             Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for higher order component userpage Should return another component with different data 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Requests
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/request/create"
+            onClick={[Function]}
+          >
+            Make A Request
+          </a>
+        </li>
+        <li>
+          <button
+            className="btn nav-link nav-btn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "inherit",
+              }
+            }
+            type="button"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="modal"
+    id="request-modal"
+  >
+    <div
+      className="modal-content"
+    >
+      <div
+        className="modal-header"
+      >
+        <h2>
+          FixZit
+        </h2>
+      </div>
+      <div
+        className="modal-body"
+      >
+        <h3>
+          Create
+           request
+        </h3>
+        <div>
+          
+        </div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="title"
+          >
+            <input
+              id="request-title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Your request title.."
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="dept"
+          >
+            Department
+            <select
+              id="dept"
+              name="department"
+              onChange={[Function]}
+            >
+              <option
+                value="maintenance"
+              >
+                Maintenance
+              </option>
+              <option
+                value="Repairs"
+              >
+                Repairs
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="content"
+          >
+            <textarea
+              id="subject"
+              name="content"
+              onChange={[Function]}
+              placeholder="Tell us about your request.."
+              required={true}
+              style={
+                Object {
+                  "height": "200px",
+                }
+              }
+            />
+          </label>
+          <button
+            className="btn btn-send"
+            id="sendRequest"
+            type="submit"
+          >
+            Send
+             Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

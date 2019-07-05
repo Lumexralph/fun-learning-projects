@@ -1,0 +1,529 @@
+/* Colour List
+header -hex 23A823, rgb - 35, 168, 35
+header text - rgb - 189, 219, 189
+header active tab - rgb (246, 247, 246)
+
+Carousel/ other pages
+body - rgb (86, 149, 149)
+text - 238, 238, 238
+carousel picker - 158, 183, 183
+
+Button
+colour - 198, 231, 133
+button text - 109, 163, 0
+hover - 232, 243, 210
+
+footer
+background color - 0, 38, 0
+text - 72, 87, 72
+
+ */
+
+ /***************************
+****************************
+Reset
+****************************
+***************************/
+@import 'normalize.css';
+
+/* Change all elements to use border-box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+/* Content Container*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+/* Row */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.float-right {
+  float: right;
+}
+/* for desktop */
+
+@media (min-width: 48em) {
+  
+}
+
+
+
+
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+.header-primary {
+  background-color: rgb(35, 168, 35);
+}
+.header-secondary {
+  color: rgb(246, 247, 246);
+}
+.header-active {
+  background: rgb(246, 247, 246);
+}
+
+/* main body */
+.main-primary {
+  background: rgb(26, 126, 126);
+}
+.main-secondary {
+  background: rgb(158, 183, 183);
+}
+
+/* button */
+.btn-primary {
+  background: rgb(126, 126, 126);
+}
+.btn-secondary {
+  background: rgb(109, 163, 0);
+}
+
+/* footer */
+.footer-primary {
+  background: rgb(0, 38, 0);
+}
+.footer-secondary {
+  background: rgb(189, 202, 189);
+}
+
+/***************************
+****************************
+Modules
+****************************
+***************************/
+/* Button Modules */
+.button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+.button > a {
+  text-decoration: none;
+  color: unset;
+}
+.btn-section {
+  color: rgb(238, 238, 238);
+  height: 100px;
+  text-align: center;
+}
+.button:hover {
+  background: rgb(26, 126, 126);
+  border-color: white;
+  text-decoration: none
+}
+.homepage-button {
+  margin-top: 20px;
+}
+
+/* for desktop */
+
+@media (min-width: 48em) {
+  
+}
+
+
+/* Header Modules */
+.header {
+  height: 170px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.header-nav-title {
+  margin-top:0px;
+  color: rgb(221, 243, 243);
+}
+.header-nav {
+  top: unset;
+  font-size: 1.125em;
+}
+.header-nav-primary {
+  background: rgb(0, 105, 105);
+  color: rgb(221, 243, 243);
+}
+.header-secondary-nav {
+  padding: 5px;
+  border-radius: 5%;
+}
+.nav-link {
+  margin: 10px 0;
+}
+.link {
+  list-style-type: none;
+}
+.link a:hover {
+  text-decoration: none;
+  background: none;
+  border: 1px solid white;
+}
+
+
+/* for desktop */
+
+@media (min-width: 40em) {
+  .header {
+    height: 100px;
+  }
+  .header-nav {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  .link {
+    display: flex;
+  }
+  .nav-link {
+    margin: unset;
+    flex: 2;
+    text-align: left;
+  }
+  .cart {
+    flex: 8;
+    text-align: right;
+  }
+
+}
+
+/* grocery cloud module */
+.grocery {
+  height: 200px;
+  text-align: center;
+}
+.grocery-title {
+  font-weight: bolder;
+}
+.grocery-text {
+  color: rgb(16, 71, 71);
+}
+.grocery-primary {
+  background: rgb(189, 219, 189);
+  color: rgb(0, 191, 0)
+}
+/* desktop */
+@media (min-width: 40em) { 
+  .grocery {
+    height: 150px;
+  }
+}
+
+/* Carousle Module */
+.main-page-carousel {
+  padding-top: 20px;
+  background: rgb(6, 117, 117);
+}
+button[uib-btn-checkbox] {
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+.carousel-img {
+  height: 200px;
+  width: 200px;
+}
+
+/* desktop */
+@media (min-width: 40em) { 
+  .carousel-img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* footer Module */
+.footer {
+  height: 160px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.125em;
+}
+.footer-text, .footer-text a {
+  text-decoration: none;
+  color: rgb(189, 202, 189);
+}
+.footer-text a:hover {
+  color: rgb(26, 126, 126);
+}
+.footer i {
+  margin: 10px;
+}
+
+/* for desktop */
+
+@media (min-width: 48em) {
+  .footer {
+    height: 150px;
+    font-size: 1.3em;
+  }  
+}
+
+/***************************
+****************************
+Shopping Page
+****************************
+***************************/
+.shop-img {
+  height: 150px!important;
+}
+
+.shop-img-text {
+  font-size: 1.5em;
+}
+
+/* for desktop */
+
+@media (min-width: 48em) {
+  .footer {
+    height: 150px;
+  } 
+  .shop-img-text {
+    font-size: 1.5em;
+  } 
+}
+
+ /* Category Module */
+ .category {  
+  /* height: 500px; */
+  position: relative;
+  padding: 5px;
+ }
+ .category-top-column {
+  border: 1px solid brown;
+  margin: 2px 0;
+ }
+ .category-product-bottom {
+  /* height: 350px; */
+  border: 1px solid rgb(112, 4, 4);
+  padding: 5px;
+  margin: 2px;
+ }
+ .category-product-list {
+   height: 100px;
+   border: 1px solid brown;
+   margin: 2px 0;
+   display: inline-flex;
+ }
+ .product-list-setting {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 1.2em;
+   color: white;
+ }
+ .product-list-setting-btn {
+   margin-right: 24px;
+ }
+
+ .control-bar-primary {
+   background: rgb(0, 105, 105);
+ }
+.control-bar-display {
+  height: 30px;
+  background: white;
+  padding-top: 5px;
+  padding-left: 30px;
+  border-radius: 3%;
+  margin: 5px 0;
+}
+ /* make the sort  by menu fit to page */
+ .dropdown-menu {
+   min-width: unset;
+ }
+
+ /* product display */
+ .category-product-image {
+  width: 70%;
+  border: 1px solid blue;
+  overflow: hidden;
+  position: relative;
+}
+.category-product-image > img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+.category-product-image-details {
+  width: 30%;
+  border: 1px solid green;
+  text-align: center;
+}
+.add-product-btn {
+  border-radius: 3px;
+  color: rgb(246, 247, 246);
+  font-weight: bold;
+}
+.add-product-btn:hover {
+  color: unset;
+}
+ 
+ 
+ /* for desktop */
+
+@media (min-width: 48em) {
+  .category-top {
+    width: 32%
+  }
+
+  .category-bottom-container {
+    width: 100%; 
+  }
+  .category-product-list-display {
+    /* display: flex; */
+    padding: 5px;
+    margin: 5px;
+  }
+  .product-on-left {
+    margin-right: 10px;
+  }
+  .category-product-list {
+    height: 200px;
+  }
+  
+  .control-bar-display {
+    margin: unset;
+  }
+  .btn-sortby {
+    text-align: center;
+  }
+}
+
+/***************************
+****************************
+Product Page
+****************************
+***************************/
+.product {
+  height: 300px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.product-image {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+.product-feature {
+  background: white;
+  height: 30px;
+  margin: 10px 0px;
+  padding: auto;
+}
+.product-description-feature {
+  height: 100px;
+  width: 150px;
+  padding: 30px;
+  margin: auto auto 10px auto;
+}
+.product-quantity-feature {
+  max-width: 40px;
+}
+.product-add-to-cart-btn {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+
+
+.cart-summary {
+  background: rgb(0, 143, 143);
+}
+.cart-summary-subtotal {
+  color: whitesmoke;
+  padding: 5px;
+  font-weight: bold;
+}
+.cart-summary-heading {
+  background: whitesmoke;
+  padding: 5px;
+  border: 1px solid powderblue;
+  border-radius: 5%;
+}
+.cart-summary-text {
+  display: flex; 
+}
+.cart-summary-text > h5 {
+  background:whitesmoke; 
+  flex: 2;
+  margin-right: 5px;
+}
+.cart-summary-text > h6 {
+  color: powderblue;
+  font-weight: 600;
+  flex: 1;
+}
+.cart-summary-text > h5, .cart-summary-text > h6 {
+  height: 25px;
+  padding: 5px;
+  border: 1px solid powderblue;
+  border-radius: 5%;
+}
+
+.cart-summary-total {
+  font-size: large;
+  font-weight: 600;
+}
+.cart-summary-total + h6 {
+  color: whitesmoke;
+}
+
+.cart-table-img > img {
+  height: 80px;
+  width: 80px;
+}
+
+/* for desktop */
+
+@media (min-width: 48em) {
+  .product {
+    height: 450px;
+  }
+}
+
+/* Contact page */
+
+
+
+/* desktop */
+@media (min-width: 40em) { 
+  .contact-form {
+    width: 50%;
+  }
+}
+
+

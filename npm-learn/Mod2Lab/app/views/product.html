@@ -1,0 +1,21 @@
+<div class="container main-primary">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 product">
+        <img class="img-responsive center-block img-thumbnail" ng-src="{{prod.product.imagelink}}" alt="product display image"/>
+    </div>
+    <div class="col-xs-12 col-sm-6 product text-center">
+      <div><h5><span class="product-feature">{{prod.product.name}}</span></h5></div>
+      <div><p><span class="product-feature">Rating: {{prod.product.rating}}</span></p></div>
+      <div>
+          <span class="product-feature">$ {{prod.product.price}}</span>
+      </div>
+      <div>
+          Amount in Stock: <span class="product-feature"> {{prod.product.stock}}</span>
+      </div>
+      <div class="product-feature product-description-feature">{{prod.product.description}}</div>
+      <label for="number">Qty</label>: <input class="product-quantity-feature" type="number" name="number" value="1" min="1" ng-model="prod.quantity">
+      <br />
+      <button type="button" class="btn btn-primary product-add-to-cart-btn" ng-click="prod.addItemToCart(prod.product)"><i class="fas fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+</div>

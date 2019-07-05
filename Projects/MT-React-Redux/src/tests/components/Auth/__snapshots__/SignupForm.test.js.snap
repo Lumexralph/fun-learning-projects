@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for Signup Form component Should call change event on email input field 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Test for Signup Form component Should call change event on psw1 input field 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Test for Signup Form component Should call change event on psw2 input field 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Test for Signup Form component Should call change event on username input field 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Test for Signup Form component Should call submit event on form 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Test for Signup Form component Should render properly 1`] = `
+<div
+  className="right-part"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="popup"
+      >
+        <span
+          className="popuptext"
+          id="myPopup"
+        />
+      </div>
+      <label
+        htmlFor="username"
+      >
+        <input
+          name="username"
+          onChange={[Function]}
+          pattern="[a-zA-Z]+"
+          placeholder="pick a username"
+          required={true}
+          title="Please, provide username with only letters."
+          type="text"
+        />
+      </label>
+      <label
+        htmlFor="email"
+      >
+        <input
+          name="email"
+          onChange={[Function]}
+          placeholder="your email address"
+          required={true}
+          type="email"
+        />
+      </label>
+      <label
+        htmlFor="psw1"
+      >
+        <input
+          minLength="8"
+          name="psw1"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="create a password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <label
+        htmlFor="psw2"
+      >
+        <input
+          minLength="8"
+          name="psw2"
+          onChange={[Function]}
+          pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+          placeholder="confirm password"
+          required={true}
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+          type="password"
+        />
+      </label>
+      <p>
+        Use at least 1 uppercase, 1 lowercase character, and 1 number
+      </p>
+      <button
+        className="btn signup-btn background-tertiary"
+        type="submit"
+      >
+        Sign up for FixZit
+      </button>
+    </div>
+  </form>
+</div>
+`;

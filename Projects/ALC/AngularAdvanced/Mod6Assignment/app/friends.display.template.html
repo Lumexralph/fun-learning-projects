@@ -1,0 +1,10 @@
+<div ng-repeat="friend in list.friends">
+    <address>
+        <strong>{{friend.name}}</strong> <em>({{friend.username}})</em><br>
+        {{friend.address.street}}, {{friend.address.suite}}<br>
+        {{friend.address.city}}<br>
+        {{friend.address.zipcode}} <br />
+        <abbr title="Phone">P:</abbr> {{friend.phone}} <br />
+        <a href="mailto:#">{{friend.email}}</a>
+      </address>
+</div>

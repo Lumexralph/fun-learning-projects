@@ -1,0 +1,93 @@
+<section class="category">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-4">
+        <!-- Accordion for categories -->
+        <div ng-controller="AccordionDemoCtrl">
+
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="oneAtATime"> Open only one at a time
+            </label>
+          </div>
+          <uib-accordion close-others="oneAtATime">
+            <div uib-accordion-group class="panel-default" heading="{{product.category}}" ng-init="categoryIndex = $index" ng-repeat="product in shop.data">
+              <div ng-repeat="subcategory in product.subcategories" ng-init="subcategoryIndex = $index">
+
+                <a href="#" ng-click="shop.getCategory(categoryIndex, subcategoryIndex)">{{subcategory.name}}</a>
+              </div>
+              <p>{{itemToDisplay}}</p>
+            </div>
+          </uib-accordion>
+        </div>
+      </div>
+      <!-- to display product on right -->
+      <div class="col-xs-12 col-sm-9 col-md-8">
+        <div class="row">
+          <div class="col-md-12 product-list-setting control-bar-primary">
+            <div class="row">
+              <div class="col-xs-12 col-sm-2">
+                <!-- toggle for product in stock -->
+                <button type="button" class="btn btn-primary" ng-model="shop.toggleOn" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">In-Stock Only</button>
+              </div>
+              <div class="col-xs-12 col-sm-3"> {{shop.noOfItemsInstock}}  out of {{shop.toggleOn ? shop.noOfItemsInstock : shop.itemInSubcategory.length}} total items</div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="row">
+                  <div class="col-xs-12">
+                    Category: <span ng-bind="shop.category"></span>
+                  </div>
+                  <div class="col-xs-12">
+                   Subcatgeory: <span ng-bind="shop.subcategory"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-2 btn-sortby">
+                <!-- ui bootstrap dropdown button -->
+                <div class="btn-group" uib-dropdown is-open="shop.status.isOpen">
+                  <button id="single-button" type="button" class="btn btn-secondary" uib-dropdown-toggle ng-disabled="disabled">
+                    Sort By
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                    <li role="menuitem">
+                      <a href="#" ng-click="shop.toggleOn ? shop.sortByNone(shop.itemsInstockCopy) : shop.sortByNone(shop.itemInSubcategoryCopy)">None</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" ng-click="shop.toggleOn ? shop.sortByPrice(shop.itemsInstock) : shop.sortByPrice(shop.itemInSubcategory)">Price</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" ng-click="shop.toggleOn ? shop.sortAlphabetically(shop.itemsInstock) : shop.sortAlphabetically(shop.itemInSubcategory)">Alphabetical</a>
+                    </li>
+                    <li role="menuitem">
+                      <a href="#" ng-click="shop.toggleOn ? shop.sortByRating(shop.itemsInstock) : shop.sortByRating(shop.itemInSubcategory)">Rating</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-sm-3 col-md-3" ng-repeat="item in (shop.toggleOn  ? shop.itemsInstock : shop.itemInSubcategory)">
+                <div class="thumbnail">
+                  <a href="/product?name={{item.name}}">
+                    <img class="shop-img" ng-src="{{item.imagelink}}" alt="{{item.name}} product image">
+                  <div class="caption text-center">
+                    <h3 class="shop-img-text">{{item.name}}</h3>
+                  </a>
+                    <p>$ {{item.price}}</p>
+                    <a href="#" class="btn btn-primary" role="button" ng-click="shop.addItemToCart(item)"><i class="fas fa-plus"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

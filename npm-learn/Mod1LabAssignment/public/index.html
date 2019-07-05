@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Configuration and Routing</title>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+  <base href="/" />
+</head>
+<body>
+  <div class="container">
+    <h1>Configuration and Routing</h1>
+    <div class="navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+    <div ng-view=""></div>
+  </div>
+
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <script src="./app/app.js"></script>
+  <script src="./app/controller/homeController.js"></script>
+  <script src="./app/controller/aboutController.js"></script>
+</body>
+</html>

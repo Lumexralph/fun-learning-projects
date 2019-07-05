@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scrumy App</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'ogundelescrumy/style.css' %}" />
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th></th>
+          <th>User</th> 
+          <th></th>
+          <th>Weekly Goals</th>
+          <th>Daily Goals</th>
+          <th>Verify</th>
+          <th>Done</th>
+        </tr>
+        {% for user in all_user %}
+        <tr>
+          <td><a href="{% url 'add_user' %}">+</a></td>
+          <td>{{ user.username }}</td> 
+          <td><a href="{% url 'add_goal' %}">+</a></td>
+          <td>
+            {% for goal in user.scrumygoals_set.all %} 
+              {% if goal.goal_state.goal_type == 'WG' %}
+
+              <a href="{% url 'move_goal' goal.id %}"><p>{{ goal}}</p></a>
+
+              {% else %}
+              <p>No Weekly goals assigned yet</p>
+
+              {% endif %}
+            {% endfor %}
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        {% endfor %}
+      </table>
+  
+</body>
+</html>

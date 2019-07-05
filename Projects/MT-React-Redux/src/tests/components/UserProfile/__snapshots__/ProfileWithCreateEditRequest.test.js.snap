@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for RequestForm Should call onChange event on select options 1`] = `
+<div
+  className="modal"
+  id="request-modal"
+>
+  <div
+    className="modal-content"
+  >
+    <div
+      className="modal-header"
+    >
+      <h2>
+        FixZit
+      </h2>
+    </div>
+    <div
+      className="modal-body"
+    >
+      <h3>
+        Edit
+         request
+      </h3>
+      <div>
+        <p
+          id="formPopup"
+        >
+          This is RequestForm
+        </p>
+      </div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="title"
+        >
+          <input
+            id="request-title"
+            name="title"
+            onChange={[Function]}
+            placeholder="Your request title.."
+            required={true}
+            type="text"
+          />
+        </label>
+        <label
+          htmlFor="dept"
+        >
+          Department
+          <select
+            id="dept"
+            name="department"
+            onChange={[Function]}
+          >
+            <option
+              value="maintenance"
+            >
+              Maintenance
+            </option>
+            <option
+              value="Repairs"
+            >
+              Repairs
+            </option>
+          </select>
+        </label>
+        <label
+          htmlFor="content"
+        >
+          <textarea
+            id="subject"
+            name="content"
+            onChange={[Function]}
+            placeholder="Tell us about your request.."
+            required={true}
+            style={
+              Object {
+                "height": "200px",
+              }
+            }
+          />
+        </label>
+        <button
+          className="btn btn-send"
+          id="sendRequest"
+          type="submit"
+        >
+          Update
+           Request
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for RequestForm Should call onChange event on textarea 1`] = `
+<div
+  className="modal"
+  id="request-modal"
+>
+  <div
+    className="modal-content"
+  >
+    <div
+      className="modal-header"
+    >
+      <h2>
+        FixZit
+      </h2>
+    </div>
+    <div
+      className="modal-body"
+    >
+      <h3>
+        Create
+         request
+      </h3>
+      <div>
+        
+      </div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="title"
+        >
+          <input
+            defaultValue=""
+            id="request-title"
+            name="title"
+            onChange={[Function]}
+            placeholder="Your request title.."
+            required={true}
+            type="text"
+          />
+        </label>
+        <label
+          htmlFor="dept"
+        >
+          Department
+          <select
+            defaultValue=""
+            id="dept"
+            name="department"
+            onChange={[Function]}
+          >
+            <option
+              value="maintenance"
+            >
+              Maintenance
+            </option>
+            <option
+              value="Repairs"
+            >
+              Repairs
+            </option>
+          </select>
+        </label>
+        <label
+          htmlFor="content"
+        >
+          <textarea
+            defaultValue=""
+            id="subject"
+            name="content"
+            onChange={[Function]}
+            placeholder="Tell us about your request.."
+            required={true}
+            style={
+              Object {
+                "height": "200px",
+              }
+            }
+          />
+        </label>
+        <button
+          className="btn btn-send"
+          id="sendRequest"
+          type="submit"
+        >
+          Send
+           Request
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for RequestForm Should call onChange event on title input field 1`] = `
+<div
+  className="modal"
+  id="request-modal"
+>
+  <div
+    className="modal-content"
+  >
+    <div
+      className="modal-header"
+    >
+      <h2>
+        FixZit
+      </h2>
+    </div>
+    <div
+      className="modal-body"
+    >
+      <h3>
+        Edit
+         request
+      </h3>
+      <div>
+        <p
+          id="formPopup"
+        >
+          This is RequestForm
+        </p>
+      </div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="title"
+        >
+          <input
+            id="request-title"
+            name="title"
+            onChange={[Function]}
+            placeholder="Your request title.."
+            required={true}
+            type="text"
+          />
+        </label>
+        <label
+          htmlFor="dept"
+        >
+          Department
+          <select
+            id="dept"
+            name="department"
+            onChange={[Function]}
+          >
+            <option
+              value="maintenance"
+            >
+              Maintenance
+            </option>
+            <option
+              value="Repairs"
+            >
+              Repairs
+            </option>
+          </select>
+        </label>
+        <label
+          htmlFor="content"
+        >
+          <textarea
+            id="subject"
+            name="content"
+            onChange={[Function]}
+            placeholder="Tell us about your request.."
+            required={true}
+            style={
+              Object {
+                "height": "200px",
+              }
+            }
+          />
+        </label>
+        <button
+          className="btn btn-send"
+          id="sendRequest"
+          type="submit"
+        >
+          Update
+           Request
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test for RequestForm Should render component 1`] = `
+<div
+  className="modal"
+  id="request-modal"
+>
+  <div
+    className="modal-content"
+  >
+    <div
+      className="modal-header"
+    >
+      <h2>
+        FixZit
+      </h2>
+    </div>
+    <div
+      className="modal-body"
+    >
+      <h3>
+        Edit
+         request
+      </h3>
+      <div>
+        <p
+          id="formPopup"
+        >
+          This is RequestForm
+        </p>
+      </div>
+      <form
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="title"
+        >
+          <input
+            id="request-title"
+            name="title"
+            onChange={[Function]}
+            placeholder="Your request title.."
+            required={true}
+            type="text"
+          />
+        </label>
+        <label
+          htmlFor="dept"
+        >
+          Department
+          <select
+            id="dept"
+            name="department"
+            onChange={[Function]}
+          >
+            <option
+              value="maintenance"
+            >
+              Maintenance
+            </option>
+            <option
+              value="Repairs"
+            >
+              Repairs
+            </option>
+          </select>
+        </label>
+        <label
+          htmlFor="content"
+        >
+          <textarea
+            id="subject"
+            name="content"
+            onChange={[Function]}
+            placeholder="Tell us about your request.."
+            required={true}
+            style={
+              Object {
+                "height": "200px",
+              }
+            }
+          />
+        </label>
+        <button
+          className="btn btn-send"
+          id="sendRequest"
+          type="submit"
+        >
+          Update
+           Request
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

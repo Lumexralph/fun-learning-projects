@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directives</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-          1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body ng-controller="labController as vm">
+    <div class="container">
+      <h1>Directives</h1>
+
+      <!-- Directives must be closed with a closing tag (<my-directive></my-directive>). They cannot use an empty tag (<my-directive/>). Notice also that the tag is lower case and separated by dashes, but the directive it is referencing is camel-cased staticMessageDirective. This is because HTML disregards case in attributes, so instead Angular converts dashed names to camel-cased names. -->
+
+      <static-message-directive></static-message-directive>
+      <div static-message-directive></div>
+      <h3-message-directive title="It's all gonna be okay"></h3-message-directive>
+
+      <!-- Remember, because we used the controllerAs syntax (ng-controller="LabController as vm"), our controller's scope is referenced by using properties of the vm object. -->
+
+      <!-- Note that when it is executed, it is being executed in the parent controller's scope, so any variables that you might need to use in the parent controller would be available when the function is executed. Any variables contained within the directive would need to be passed back to the controller via two-way binding in order to be used in the controller's scope. -->
+
+      <person person="vm.person" action="vm.show()"></person>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/staticMessageDirective.js"></script>
+    <script src="./app/h3Directive.js"></script>
+    <script src="./app/personDirective.js"></script>
+    <script src="./app/labController.js"></script>
+      
+  </body>
+</html>

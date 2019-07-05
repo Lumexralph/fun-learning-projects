@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Lab</title>
+  <style>
+    body {
+      font-family: Verdana;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: darkblue;
+    }
+
+    .rating-circle {
+      height: 2em;
+      width: 2em;
+      border: .1em solid black;
+      border-radius: 1.1em;
+      display: inline-block;
+      margin: 0;
+      padding: .1em;
+    }
+
+    .rating-hover {
+      background-color: yellow;
+    }
+
+    .rating-chosen {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>  
+  <h3>Rate this session</h3>
+  <div>
+      <label for="messageInput">Enter message:</label>
+      <input type="text" id="messageInput" />
+      <button type="button" id="update-max-value">Send Message</button>
+    </div>
+  <div id="rating-container" max-value="5">
+    
+  </div>
+
+  <!-- jquery -->
+  <script src="../scripts/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

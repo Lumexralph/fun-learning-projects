@@ -1,0 +1,30 @@
+<section class="main-page-carousel">
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-secondary float-right" ng-model="main.toggleOn" uib-btn-checkbox btn-checkbox-true="1"
+        btn-checkbox-false="0">Toggle Slide Show</button>
+    </div>
+    <div class="row">
+      <div uib-carousel active="main.active" interval="main.toggleOn ? 5000 : 0;" class="carousel-inner" role="listbox">
+        <div uib-slide ng-repeat="slide in main.imageSrc" index="$index" ng-class="{active : $first}">
+            <a href="/product?name={{slide.name}}">
+              <img class="carousel-img img-responsive center-block"  ng-src="{{slide.imagelink}}" style="margin:auto;"> 
+            </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="btn-section">
+  <div class="container">
+    <div class="row">
+      <button class="button btn-secondary homepage-button">
+        <a href="/shopping">Shop All</a>
+      </button>
+    </div>
+  </div>
+</section>
+</div>

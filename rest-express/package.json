@@ -1,0 +1,26 @@
+{
+  "name": "rest-express",
+  "version": "0.0.1",
+  "description": "REST API application with Express, Mongoskin, MongoDB, Mocha and Superagent",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test -R spec"
+  },
+  "author": "Ogundele Olumide",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "mongoskin": "^2.1.0",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.5.3",
+    "superagent": "^3.6.0"
+  }
+}

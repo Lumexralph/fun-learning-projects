@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: django-ogundelescrumy
+Version: 0.1
+Summary: A simple Django app for scrum agile development, a project management too.
+Home-page: UNKNOWN
+Author: Ogundele Olumide
+Author-email: olumideralph@gmail.com
+License: BSD License
+Description: =====
+        Ogundelescrumy
+        =====
+        
+        Ogundelescrumy is a simple Django app to carry out scrum agile development tasks process. For each user create there are roles and based on this they can interact with tasks and give them different status afterwards, just a project management tool.
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        
+        1. Add "ogundelescrumy" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'ogundelescrumy',
+            ]
+        
+        2. Include the ogundelescrumy URLconf in your project urls.py like this::
+        
+            path('ogundelescrumy/', include('ogundelescrumy.urls')),
+        
+        3. Run `python manage.py migrate` to create the ogundelescrumy models.
+        
+        4. Visit http://127.0.0.1:8000/ogundelescrumy/ .
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0.4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

@@ -1,0 +1,54 @@
+{
+    "extends": ["airbnb", "plugin:react/recommended"],
+    "plugins": ["react"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "node": true,
+      "es6": true,
+      "mocha": true
+    },
+    "globals": {
+      "document": true,
+      "M": true,
+      "window": true,
+      "localStorage": true,
+      "expect": true
+    },
+    "rules": {
+      "max-len": [
+        1,
+        80,
+        2,
+        {
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "indent": ["error", 2],
+      "react/jsx-one-expression-per-line": 0,
+      "react/forbid-prop-types": [
+        0,
+        {
+          "forbid": ["any"],
+          "checkContextTypes": true,
+          "checkChildContextTypes": true
+        }
+      ],
+      "import/no-extraneous-dependencies": false,
+      "max-depth": ["error", 5],
+      "jsx-a11y/label-has-for": 0,
+      "jsx-a11y/label-has-associated-control": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "import/extensions": ["error", "as-needed"],
+      "import/no-unresolved": [2, { "commonjs": true }],
+      "function-paren-newline": ["error", "consistent"]
+    }
+  }

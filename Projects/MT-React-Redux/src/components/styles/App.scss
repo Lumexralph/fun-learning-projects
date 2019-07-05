@@ -1,0 +1,895 @@
+@import 'normalize';
+@import '_color';
+@import '~font-awesome/css/font-awesome.css';
+@import 'profile';
+@import 'request-page';
+@import 'Loader';
+@import 'RequestCard';
+
+
+/* Page Layout */
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    padding: 10px;
+    background-color:$background-primary-2;
+    color: white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
+
+/* ######################### */
+
+/* Base Styles */
+body {
+  font-family: arial;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+/*forms */
+input[type=text], input[type=password], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #837f7f;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ################################ */
+
+/* on desktop change to grid view */
+@media (min-width: 760px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto;
+
+  }
+}
+
+/* button modules */
+/* ###################### */
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 3px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  background: none;
+  border-color: white;
+  text-decoration: none;
+}
+
+.signup-login {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 1em;
+  justify-content: center;
+}
+.signup-login-btn {
+  width: 200px;
+  height: 60px;
+  color: white;
+}
+
+/* header module */
+.header-logo {
+  max-width: 20%;
+}
+.header-nav {
+  font-size: 0.8em;
+  text-align: right;
+
+  a {
+    color: steelblue;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+/* Homepage text modules */
+/* ########################### */
+.text-secondary {
+  color: $text-secondary;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.background-tertiary {
+  background: $background-tertiary;
+}
+
+.background-tertiary-2 {
+  background: $background-tertiary-2;
+}
+
+/* Navbar modules */
+/* ########################### */
+.nav {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-btn {
+  color:rgb(212, 210, 224);
+  padding: 10px 15px;
+  font-size: 1.125em;
+}
+
+/* on desktop change to grid view */
+@media (min-width: 760px) {
+  .signup-login {
+    margin: 80px 0px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Heading Section Modules*/
+.heading {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(46, 65, 114, 0.6);
+}
+
+.site-name {
+  color: #3397e6;
+}
+
+.heading > p, h4 {
+  color: white;
+}
+.heading-img {
+  width: 100%;
+  background-image: url('./../img/header-imageA-3.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* on desktop change */
+@media (min-width: 760px) {
+  .heading-title-text {
+    font-size: 2.5em;
+  }
+  .heading-text {
+    font-size: 1.6em;
+  }
+  .heading > h1 {
+    font-size: 3.3em;
+  } 
+  /* make buttons align together */
+  .signup-login {
+    grid-template-columns: auto auto;
+    grid-column-gap: 2em;
+  }
+}
+
+
+/* Recent Requests Module */
+.recent-request {
+  text-align: center;
+  padding: 10px;
+}
+
+.recent-request-title {
+  color: azure;
+  font-size: 2em;
+}
+
+.recent-request-text {
+  color: #3397e6;
+  text-shadow: 1px 1px black;
+}
+
+.recent-request-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* accordion for Recent Module */
+.accordion {
+  background-color: rgb(46, 65, 114);
+  color:white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:rgba(11, 23, 56, 0.96);
+  color: white;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  color: #3397e6;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.edit-btn {
+  border: 1px solid #0a0a2f;
+  padding: 5px;
+  border-radius: 3px;
+  width: 75px;
+  cursor: pointer;
+}
+
+/* on desktop change to grid view */
+@media (min-width: 760px) {
+  .request-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2em;
+  }
+}
+
+/* footer module */
+.footer {
+  background: $background-quarternary;
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 1em;
+}
+
+.footer-logo {
+  max-width: 15%;
+}
+
+.footer-nav-links {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer-details div {
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+
+.footer-info-margins {
+  margin: 15px 0;
+}
+
+.footer-links a:hover {
+  color: silver;
+}
+
+/* Social Media Icons */
+.footer-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-icon .fab {
+  color: azure;
+}
+
+.footer-icon .fab:hover {
+  color: silver;
+}
+
+/* on desktop viewport */
+@media (min-width: 760px) {
+  .footer {
+    grid-template-columns: 260px auto;
+    grid-column-gap: 1em;
+  }
+
+  .footer-details div {
+    font-size: 0.9em;
+  }
+  
+
+  .footer-logo {
+    max-width: 30%;
+  }
+
+  .footer-details {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+  .footer-links-copyright {
+    flex: 1;
+    text-align: left
+  }
+  .footer-nav-links-container {
+    flex: 1;
+  }
+  .footer-nav-links {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-info {
+    display: flex;
+  }
+
+  .footer-info > div {
+    flex: 1;
+  }
+  
+}
+
+@media only screen and (min-width: 450px) {
+  .footer-logo {
+    max-width: 10;
+  }
+}
+
+/* ######################### 
+SIGNUP PAGE
+#########################
+*/
+.signup-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  grid-row-gap: 2em;
+  background-color: rgba(46, 65, 114, 0.6);
+  color: white;
+}
+
+.left-part {
+  text-align: left;
+}
+
+.signup-container-img {
+  width: 100%;
+  background-image: url('./../img/imageC-2.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.signup-btn {
+  color: white;
+}
+
+/*#################
+pop up 
+ */
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -200px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#formPopup {
+  background-color: #f7564a;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.login {
+  padding: 40px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 560px) {
+  .signup-container {
+    grid-template-columns: auto auto;
+    padding: 20px;
+    grid-column-gap: 2em;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .signup-container {
+    grid-template-columns: auto auto;
+    padding: 50px;
+    grid-column-gap: 5em;
+  }
+  .login {
+    padding: 102px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .signup-container {
+    grid-template-columns: auto auto;
+    padding: 75px;
+    grid-column-gap: 5em;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .signup-container {
+    grid-template-columns: auto auto;
+    padding: 70px;
+    grid-column-gap: 5em;
+  }
+  .login {
+    padding: 132px;
+  }
+}
+
+
+/* #############
+  LOGIN PAGE
+################*/
+
+
+.psw > p {
+  float: left;
+}
+
+.remember-box {
+  text-align: left;
+    padding: 10px;
+}
+
+
+ /* #######################
+    USER-PAGE
+ ##########################*/
+ .user-home-container {
+  padding: 20px;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #6372c5b0;
+ }
+ .user-home-bg-img {
+    // background-image: url('./../img/imageB-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ #noRequestText {
+   display: none;
+ }
+ 
+ /* Style the tab */
+ .tab {
+  display: grid;
+  grid-template-columns: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.tab-header {
+  width: 80%;
+  margin: auto;
+}
+
+.request-card {
+  cursor: unset;
+  box-shadow: 0 0;
+  &:hover {
+    box-shadow: 0 0;
+  }
+}
+
+
+/* Create an active/current tablink class */
+#defaultOpen {
+  background-color: rgb(38, 49, 76);
+  color: azure;
+}
+
+#makeRequest {
+  background-color: transparent;
+}
+
+/* override the previously set active class setting */
+.tab button.active::after {
+  content: '';
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* display: none; */
+  padding: 6px 12px;
+  border: 1px solid rgb(38, 49, 76);
+  border-top: none;
+}
+
+.btn-update {
+  background-color: cadetblue;
+  color: white;
+}
+
+.btn-update:hover {
+  color: white;
+}
+
+.cancel-request-btn {
+  margin-top: 10px;
+}
+
+.cancel-request-btn:hover {
+  color: white;
+}
+
+.btn-send {
+  background-color: rgb(38, 49, 76);
+  color: white;
+}
+
+.btn-send:hover {
+  background-color: rgb(38, 49, 76);
+  opacity: 0.8;
+}
+
+/* edit request form */
+.edit-request-form {
+  width: 80%;
+  margin: auto;
+  background-color: #1f1f3e;
+  padding: 20px;
+}
+
+.edit-form-text {
+  color: white;
+}
+
+#errorMessage {
+  width: 100%;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  display: none;
+}
+
+/* ########################
+  ADMIN PAGE
+########################### */
+.admin-container {
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+/* Admin Navbar 1 Module */
+.admin-panel-1 {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.admin-panel-1  select {
+  width: 80%;
+  padding: 5px;
+}
+
+.admin-panel-1-text > p {
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+/* for each bar content */
+.admin-panel-1:nth-child(1) {
+  flex: 1;
+}
+.admin-panel-1:nth-child(2) {
+  flex: 2;
+}
+
+.admin-panel-1:nth-child(3) {
+  flex: 1;
+}
+
+.admin-table-btn {
+    width: 60px;
+    margin-top: 3px;
+    border-radius: 10%;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* the request title */
+.request-title {
+  cursor: pointer;
+}
+
+.accept-btn {
+  background: green;
+}
+
+.reject-btn {
+  background: #fe5f24;
+}
+
+/* not very small screens */
+@media only screen and (min-width: 400px) {
+  .admin-panel-1 {
+    display: flex;
+  }
+}
+
+/* panel 2 */
+.admin-panel-2 {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.admin-panel-2-text > p {
+  margin: 0px;
+  font-size: 1.4em;
+}
+
+/* admin 3 panel */
+.admin-panel-3 {
+  padding: 10px;
+}
+/* container to make table responsive */
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* The colour status of the requests */
+.approved {
+  color: green;
+}
+
+.rejected {
+  color: red;
+}
+
+.pending {
+  color: rgb(240, 240, 69);
+}
+
+.resolved {
+  color: $background-primary;
+}
+
+.btn-margin {
+  margin-right: 1em;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .admin-panel-2 {
+    display: flex;
+
+  }
+
+  .tab-header {
+    width: 60%;
+    margin: auto;
+  }
+
+  .edit-request-form {
+    width: 60%;
+  }
+
+  .cancel-request-btn {
+    margin-top: unset;
+    margin-left: 5px;
+  }
+  
+}
+
+/* Modal Module for Admin request */
+/* The Modal (background) */
+.modal {
+  position: relative;
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 5px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background: rgb(38, 49, 76);
+  color: white;
+}
+
+.modal-body {
+padding: 30px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background: rgb(38, 49, 76);
+  color: white;
+}
+
+@media only screen  and (min-width: 768px) {
+  .modal-content {
+    width: 60%;
+  }
+
+}
+
+@media only screen  and (min-width: 1024px) {
+  .modal-content {
+    width: 40%;
+  }
+
+  .btn {
+    padding: 12px 30px;
+    font-size: 1.313em;
+  }
+
+}

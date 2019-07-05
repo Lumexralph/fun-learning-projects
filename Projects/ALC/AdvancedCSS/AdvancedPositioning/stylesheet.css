@@ -1,0 +1,22 @@
+.box {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  background: orangered;
+  border-radius: 25px;
+}
+
+.pin-top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.relative {
+  position: relative;
+}

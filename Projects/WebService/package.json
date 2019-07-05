@@ -1,0 +1,36 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "./node_modules/.bin/nodemon ./bin/www.js",
+    "test": "NODE_ENV=test mocha",
+    "lint": "./node_modules/.bin/eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lumexralph/WebService.git"
+  },
+  "author": "Ogundele Olumide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lumexralph/WebService/issues"
+  },
+  "homepage": "https://github.com/Lumexralph/WebService#readme",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pg": "^7.0.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.4.2"
+  }
+}

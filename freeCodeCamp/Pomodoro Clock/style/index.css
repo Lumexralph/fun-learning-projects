@@ -1,0 +1,169 @@
+/* for screen size more than 332px, but will set it at 298px, that's when I noticed the breakpoint but don't know the cause yet
+332px - 34 = 298px */
+
+@media (min-width: 298px) {
+  .breakTime {
+    flex: 1;    
+  }
+
+  .workTime {
+    flex: 1;
+  }
+
+  .col-sm-3 {
+    padding: 15px;
+  }
+}
+
+
+/* ////////////////////////////// */
+
+body {
+  background-color: grey;
+  width: 95%;
+  margin: 0 auto;
+}
+.col-sm-3 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+h1[class="text-center"] {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-shadow: 1px 2px darkgrey;
+}
+
+.pomodoro {
+  background-color: black;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 7%;
+  margin-bottom: 5px;
+}
+
+text-center {
+  color: darkslategray;
+  margin: auto;
+  text-align: center;
+  text-shadow: 1px 1px #eae6e6;  
+}
+
+.breakTime {
+  /* border: 1px solid orange; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: orange;
+}
+
+.timer {
+  border: 1px solid black;
+  flex: 2;
+  /* text-align: center;  */
+}
+
+.timer:hover {
+  background-color: rgba(47, 79, 79, 0.4);
+}
+
+.time {
+  display: inline-block;
+}
+
+.outerTimer {
+  background-color: rgba(47, 79, 79, 0.3);
+  max-width: 90%;
+  margin: 0 auto;
+  height: 180px;
+}
+
+/* when you want to click the timer */
+.outerTimer:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.innerTimer {
+  margin: 0 auto;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workTime {
+  /* border: 1px solid greenyellow; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: greenyellow;
+}
+
+.workColour {
+  color: greenyellow;
+}
+
+.breakColour {
+  color: orange;
+}
+
+input {
+  background-color: unset;
+  border-radius: 50%;
+  width: 30px;
+  font-family: fantasy;
+  color: silver;
+}
+
+/* when you are on the button */
+input:hover {
+  background-color: rgba(105, 105, 105, 0.4);  cursor: pointer;
+}
+
+/* style the border colour of all the break buttons */
+[class="break"] {
+  border-top-color: orange;
+  border-left-color: orange;
+}
+
+/* style the border colour of all the work buttons */
+[class="work"] {
+  border-top-color: greenyellow;
+  border-left-color: greenyellow;
+}
+
+/* footer */
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.footer > p {
+  text-shadow: 1px 1px #eae6e6;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li {
+  margin: 0px 10px 0px 10px;
+}
+
+/* font awesome icons */
+.fa {
+  color: black;
+}
+
+.fa:hover {
+  color: whitesmoke;
+}

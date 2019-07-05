@@ -1,0 +1,27 @@
+{
+  "name": "promise-async-await",
+  "version": "1.0.0",
+  "description": "showing async programming with promise and async/await",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile": "babel src/index.await-async1.js --presets env --out-dir lib",
+    "compile1": "babel src/index.await-async2.js --presets env --out-dir lib",
+    "compile2": "babel src/index.promises1.js --presets env --out-dir lib",
+    "compile3": "babel src/index.promises2.js --presets env --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "promise"
+  ],
+  "author": "Olumide Ogundele",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

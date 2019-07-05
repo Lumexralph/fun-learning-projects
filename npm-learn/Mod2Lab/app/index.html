@@ -1,0 +1,115 @@
+<!doctype html>
+<html ng-app="mod2LabApp">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <base href="/" />
+</head>
+
+<body ng-controller="AppController">
+  <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header class="header header-primary">
+    <div class="container">
+      <h2 class="header-nav-title">Grocery Cloud</h2>
+      <nav class="nav header-nav">
+        <ul class="link">
+          <li class="nav-link">
+            <a class="header-secondary header-secondary-nav" href="/">Home</a>
+          </li>
+          <li class="nav-link">
+            <a class="header-secondary header-secondary-nav" href="/shopping">Shop</a>
+          </li>
+          <li class="cart">
+            <a class="header-secondary header-secondary-nav" href="/cart"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="grocery grocery-primary">
+      <div class="container">
+        <h2 class="grocery-title">Grocery Cloud</h2>  
+
+        <h4 class="grocery-text">Welcome to the No 1. online store in Africa. Have a beautiful experience ..</h4>
+      </div>
+    </section>
+    <section>
+       <div ng-view=""></div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-primary footer-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12"></div>
+      </div>
+      <div class="row">olumideralph@gmail.com</div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6" col-lg-6><a href="#">About Us</a></div>
+        <div class="col-xs-12 col-md-6 col-lg-6"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="row">
+          <a href="https://github.com/Lumexralph/" target="_blank"><i class="fab fa-github"></i></a>
+
+          <a href="https://www.freecodecamp.org/lumexralph" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+
+          <a href="https://www.linkedin.com/in/ogundeleolumide/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      </div>
+      <div class="row">&copy; {{currentYear}} <a href="/">Grocery Cloud</a></div>
+    </div>
+  </footer>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/lodash/dist/lodash.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/service/mainService.js"></script>
+  <script src="scripts/controllers/productController.js"></script>
+  <script src="scripts/controllers/accordionController.js"></script>
+  <script src="scripts/controllers/shopController.js"></script>
+  <script src="scripts/controllers/CartController.js"></script>
+  <script src="scripts/controllers/contact.js"></script>
+
+
+  <!-- endbuild -->
+</body>
+
+</html>

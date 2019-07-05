@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Promises, HTTP and Resources</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+<body ng-controller="labController">
+    <div class="container">
+        <h1>Promises, HTTP and Resources</h1>
+        <input type="number" class="form-control" ng-model="model.number" />
+        <input type="button" value="Check Odd Number" class="btn btn-primary" ng-click="checkOddNumber(model.number)" />
+
+        <pre>{{model.result}}</pre>
+        <input type="text" class="form-control" ng-model="model.search" />
+
+        <p>{{model.search.length}}</p>
+        <p>If there was an error: {{model.repos}}</p>
+
+        <div ng-if="(model.search === undefined || model.search.length === 0) || !model.buttonClicked">
+            <input type="button" value="Load Repos" class="btn btn-primary" ng-click="getRepos(model.search)" ng-hide="model.repos" />
+        </div>
+
+        <!-- show for no result -->
+        <div ng-if="model.repos.status === 404" class="alert alert-danger" role="alert">
+            <strong>No result Found.</strong>
+        </div>
+
+        <div ng-if="model.repos.status !== 404" class="col-md-6">
+            <table class="table table-striped" ng-show="model.repos">
+                <tr>
+                    <th>Name</th>
+                    <th>Language</th>
+                    <th></th>
+                </tr>
+                <tr ng-repeat="r in model.repos">
+                    <td>
+                        <h4>{{r.name}}</h4> {{r.description}}
+                    </td>
+                    <td>{{r.language}}</td>
+                    <td><input type="button" value="Detail" class="btn btn-success" ng-click="loadDetail(r.name, model.search)"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-5" ng-show="model.detail">
+            <h3>Detail</h3>
+            <div ng-show="model.detail.error" class="alert alert-danger">
+                <h3>Error</h3>
+                {{model.detail.message}}
+            </div>
+
+            <div>
+                <h4>Name</h4>
+                {{model.detail.name}}
+            </div>
+            <div>
+                <h4>Description</h4>
+                {{model.detail.description}}
+            </div>
+            <div>
+                <!-- We're using an ng-href attribute to set the href of our <a> tag because we are using an angular expression to populate the href attribute of the HTML. If you attempt to use an Angular expression in an href attribute directly many browsers (including Internet Explorer) will simply ignore the link as bad content even after Angular compiles the real href -->
+
+                <h4>URL</h4>
+                <a ng-href="{{model.detail.html_url}}" target="_blank">
+                    {{model.detail.html_url}}
+                </a>
+            </div>
+
+            <h4>Raw Data</h4>
+            <pre>{{model.detail | json}}</pre>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-resource.min.js"></script>
+    <script src="./app/gitHubService.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/labController.js"></script>
+</body>
+
+</html>

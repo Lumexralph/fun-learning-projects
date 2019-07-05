@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Tony's Pizza - New User Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous" />
+</head>
+
+<body ng-controller="labController">
+    <div class="container" ng-if="!submitted">
+        <h1>New User Registration</h1>
+        <form class="form-horizontal" name="form" novalidate>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Username</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" name="username" class="form-control" ng-model="model.username" required />
+                    <div class="alert alert-danger" ng-show="(form.username.$touched || form.$submitted) && form.username.$error.required">
+                        Username is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Password</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="password" name="password" class="form-control" ng-model="model.password" required />
+                    <div class="alert alert-danger" ng-show="(form.password.$touched || form.$submitted) && form.password.$error.required">
+                            Password is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Name</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" name="Name" class="form-control" ng-model="model.Name" required />
+                    <div class="alert alert-danger" ng-show="(form.Name.$touched || form.$submitted) && form.Name.$error.required">
+                            Name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Phone Number</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="number" name="phone" class="form-control" ng-model="model.phone" ng-required="!model.email"/>
+                    <div class="alert alert-danger" ng-show="(form.phone.$touched || form.$submitted) && form.phone.$error.required">
+                            Phone Number is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Email Address</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="email" name="email" class="form-control"  ng-model="model.email" ng-required="!model.phone" />
+                    <div class="alert alert-danger" ng-show="(form.email.$touched || form.$submitted) && form.email.$error.required">
+                            Email is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label>Favorite Pizza</label>
+                </div>
+                <div class="col-md-5">
+                    <select name="favorite" class="form-control" ng-model="model.favorite" ng-required="true">
+                        <option></option>
+                        <option>Cheese Pizza</option>
+                        <option>Pepperoni Pizza</option>
+                        <option>Margherita Pizza</option>
+                        <option>BBQ Chicken Pizza</option>
+                        <option>Combo Pizza</option>
+                    </select>
+                    <div class="alert alert-danger" ng-show="(form.favorite.$touched || form.$submitted) && form.favorite.$error.required">
+                            Select your favorite Pizza.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-5">
+                    <input type="submit" value="Submit" class="btn btn-primary" ng-click="submit(model)" ng-disabled="form.$invalid" />
+                    <button class="btn btn-default">Reset</button>
+                </div>
+            </div>
+        </form>
+
+        <pre>{{model | json}}</pre>
+
+    </div>
+
+    <!-- view to handle registration -->
+    <section ng-if="submitted">
+        <div class="jumbotron container">
+            <h1 class="display-3">Registration Successful</h1>
+            <p class="lead">Welcome new user</p>
+            <hr class="my-2">
+            <p>Your token to order pizza is <strong>{{token}}</strong></p>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <!-- Because ng-resource is an outside library from the primary Angular library, we need to make sure to include it as a dependency. In addition we need to add a reference to the Angular Resource script into our HTML: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-resource.min.js"></script>
+    <script src="./scripts/registrationService.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/labController.js"></script>
+</body>
+
+</html>

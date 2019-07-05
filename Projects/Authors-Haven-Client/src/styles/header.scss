@@ -1,0 +1,76 @@
+#site-header {
+  height: 60px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+  .ui.secondary.menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 95%;
+    @media (max-width: 768px) {
+      .item {
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+  .logo {
+    p {
+      font-family: $logo-font;
+      font-weight: 700;
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      p {
+        font-size: 16px;
+        line-height: 1em;
+      }
+    }
+    @media (max-width: 321px) {
+      p {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .ui.button {
+      width: 90px;
+    }
+  }
+  .tell-story {
+    color: $primary-color;
+    img {
+      width: 16px;
+      margin-right: 2px;
+    }
+    @media (max-width: 768px) {
+      span {
+        display: none;
+      }
+    }
+  }
+  .become-member {
+    left: -20rem;
+    a {
+      color: $primary-color;
+    }
+  }
+  .notification {
+    width: 16px;
+  }
+  @media (max-width: 768px) {
+    .become-member {
+      display: none;
+      left: 0;
+    }
+  }
+  @media (max-width: 425px) {
+    .ui.secondary.menu {
+      margin-left: -.35714286em;
+      margin-right: -.35714286em;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}

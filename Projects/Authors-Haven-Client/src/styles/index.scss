@@ -1,0 +1,33 @@
+@import "./fonts";
+@import "./colours";
+@import "./button";
+@import "./head-card";
+@import "./menu";
+@import "./avatar";
+@import "./card";
+@import "./header";
+@import "./footer";
+@import "./homepage";
+@import "./loginCard";
+@import "./auth-form-modal";
+@import "./reset";
+@import "./resetSuccess";
+@import "./create-article";
+@import './article-view';
+
+body {
+  background: #fff;
+  font-family: $primary-font;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $darker-secondary-color;
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+    transition: 300ms all ease-in-out;
+  }
+}

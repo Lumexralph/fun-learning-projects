@@ -1,0 +1,9 @@
+node_modules/
+bower_components/
+.idea
+.DS_Store
+.env
+bin
+lib/*spec.*
+*.js
+*.map

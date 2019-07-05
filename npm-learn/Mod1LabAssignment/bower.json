@@ -1,0 +1,22 @@
+{
+  "name": "mod1labassignment",
+  "description": "using Angular with ngRoute",
+  "main": "index.js",
+  "authors": [
+    "Olumide Ogundele"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "angular": "^1.6.9"
+  }
+}

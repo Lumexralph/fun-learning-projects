@@ -1,0 +1,1477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for LoginPage with non-admin Should call change event on email input field 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="loader-text"
+  >
+    <p>
+      Signup successful
+    </p>
+  </div>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Test for LoginPage with non-admin Should call change event on psw1 input field 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="loader-text"
+  >
+    <p>
+      Signup successful
+    </p>
+  </div>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Test for LoginPage with non-admin Should call change event on psw2 input field 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="loader-text"
+  >
+    <p>
+      Signup successful
+    </p>
+  </div>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Test for LoginPage with non-admin Should call change event on username input field 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="loader-text"
+  >
+    <p>
+      Signup successful
+    </p>
+  </div>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Test for LoginPage with non-admin Should call submit event on form 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    className="loader"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <circle transform=\\"translate(8 0)\\" cx=\\"0\\" cy=\\"16\\" r=\\"0\\"> 
+    <animate attributeName=\\"r\\" values=\\"0; 4; 0; 0\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0\\"
+      keytimes=\\"0;0.2;0.7;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\" />
+  </circle>
+  <circle transform=\\"translate(16 0)\\" cx=\\"0\\" cy=\\"16\\" r=\\"0\\"> 
+    <animate attributeName=\\"r\\" values=\\"0; 4; 0; 0\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.3\\"
+      keytimes=\\"0;0.2;0.7;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\" />
+  </circle>
+  <circle transform=\\"translate(24 0)\\" cx=\\"0\\" cy=\\"16\\" r=\\"0\\"> 
+    <animate attributeName=\\"r\\" values=\\"0; 4; 0; 0\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.6\\"
+      keytimes=\\"0;0.2;0.7;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\" />
+  </circle>
+</svg>
+",
+        }
+      }
+      style={
+        Object {
+          "fill": "lightblue",
+          "height": "5%",
+          "width": "20%",
+        }
+      }
+    />
+  </div>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Test for LoginPage with non-admin Should render component 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <img
+      alt="header logo"
+      className="header-logo"
+      src="test-file-stub"
+    />
+    <nav>
+      <ul
+        className="nav"
+      >
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="btn nav-btn nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    className="signup-container-img"
+  >
+    <section
+      className="signup-container"
+    >
+      <div
+        className="right-part"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="popup"
+            >
+              <span
+                className="popuptext"
+                id="myPopup"
+              />
+            </div>
+            <label
+              htmlFor="username"
+            >
+              <input
+                name="username"
+                onChange={[Function]}
+                pattern="[a-zA-Z]+"
+                placeholder="pick a username"
+                required={true}
+                title="Please, provide username with only letters."
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="email"
+            >
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="your email address"
+                required={true}
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="psw1"
+            >
+              <input
+                minLength="8"
+                name="psw1"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="create a password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <label
+              htmlFor="psw2"
+            >
+              <input
+                minLength="8"
+                name="psw2"
+                onChange={[Function]}
+                pattern="^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s).*$"
+                placeholder="confirm password"
+                required={true}
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+                type="password"
+              />
+            </label>
+            <p>
+              Use at least 1 uppercase, 1 lowercase character, and 1 number
+            </p>
+            <button
+              className="btn signup-btn background-tertiary"
+              type="submit"
+            >
+              Sign up for FixZit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer
+    className="footer background-quarternary"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="app logo"
+          className="footer-logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div>
+      <div
+        className="footer-details text-secondary"
+      >
+        <div
+          className="footer-info"
+        >
+          <div>
+            FixZit 5555 Address St. #555 City, State 55555
+          </div>
+          <div>
+            01-2245-789
+          </div>
+          <div
+            className="footer-icon"
+          >
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-facebook-f text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-linkedin text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-twitter text-secondary"
+              />
+            </a>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-instagram text-secondary"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          className="footer-links"
+        >
+          <div
+            className="footer-links-copyright"
+          >
+            Copyright © 2018 ALL RIGHTS RESERVED
+          </div>
+          <div
+            className="footer-nav-links-container"
+          >
+            <ul
+              className="footer-nav-links"
+            >
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  PRIVACY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  TERMS OF USE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

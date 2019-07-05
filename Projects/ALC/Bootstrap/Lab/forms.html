@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Music Album</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <form class="form-horizontal">
+          <div class="form-group has-error has-feedback">
+            <label for="address" class="control-label col-md-3">Address:</label>
+            <div class="col-md-6">
+              <input type="text" name="address" id="address" class="form-control" />
+              <!-- Glyphicon is placed after textbox -->
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+          </div>
+         
+          <!-- Input group -->
+          <div class="form-group has-error has-feedback">
+            <label for="username" class="control-label col-md-3">Username:</label>
+            <div class="col-md-6">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <input type="text" class="form-control" name="username" id="username" />
+              </div>
+              <!-- Glyphicon is placed after input group-->
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+          </div>
+        </form>
+        <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h3>Warning</h3>
+            <div>It appears that something has gone wrong</div>
+          </div>
+  </div>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+</body>
+
+</html>

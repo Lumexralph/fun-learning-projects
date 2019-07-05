@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wikipedia Viewer</title>
+	<link rel="stylesheet" href="wiki.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="body">
+  <div class="container-fluid">
+    <header id="header">
+      <h2><b>Wikipedia Viewer</b></h2></header>
+    <div id="rowWrapper">
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <p>
+            <h3>Search for an article below</h3></b>
+          </p>
+          <input type="text" placeholder="Search" id="inputText">
+          <button type="button" class="btn btn-primary btn-sm">Search</button>
+          <br><br>
+          <h4>Click <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><span><b>here</b></span></a> to get a random article</h4>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <div id="displayData"></div>
+        </div>
+
+        <footer class="col-xs-12 col-md-12">
+          <b><h3>Lumex Creations</h3></b>
+          <p>Contact Us <a href="http://codepen.io/Lumexralph/full/zveeqa"><b>here</b></a></p>
+        </footer>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="wiki.js"></script>
+</body>
+</html>

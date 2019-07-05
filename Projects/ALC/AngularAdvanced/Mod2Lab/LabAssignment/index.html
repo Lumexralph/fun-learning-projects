@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Directives</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+<body ng-controller="LabController as vm">
+    <div class="container">
+        <h1>Directives</h1>
+        <div class="col-md-6">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Nationality</th>
+                        <th>Dates</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr author ng-repeat="data in vm.authors" data="data" action="vm.displayName(data)"></tr>
+                </tbody>
+            </table>
+        </div> 
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/authorsDirective.js"></script>
+    <script src="./app/LabController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "add-movies",
+  "version": "1.0.0",
+  "description": "small server that makes movie collection",
+  "main": "server/www.js",
+  "scripts": {
+    "lint": "eslint app.js",
+    "start": "babel-node server/www",
+    "auto-start": "nodemon --exec \"npm run lint && npm start\" --ignore public/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ogundele Olumide",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.17.2",
+    "consolidate": "^0.14.5",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "nunjucks": "^3.0.1"
+  }
+}

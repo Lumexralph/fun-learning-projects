@@ -1,0 +1,17 @@
+2017-09-19T21:48:38.633-0700 I CONTROL  [initandlisten] MongoDB starting : pid=11592 port=27017 dbpath=C:/Program Files (x86)/Git/data/rs1 64-bit host=Lenovo-PC
+2017-09-19T21:48:38.634-0700 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-09-19T21:48:38.634-0700 I CONTROL  [initandlisten] db version v3.4.7
+2017-09-19T21:48:38.634-0700 I CONTROL  [initandlisten] git version: cf38c1b8a0a8dca4a11737581beafef4fe120bcd
+2017-09-19T21:48:38.635-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-09-19T21:48:38.636-0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-09-19T21:48:38.636-0700 I CONTROL  [initandlisten] modules: none
+2017-09-19T21:48:38.636-0700 I CONTROL  [initandlisten] build environment:
+2017-09-19T21:48:38.637-0700 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-09-19T21:48:38.637-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2017-09-19T21:48:38.637-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-09-19T21:48:38.637-0700 I CONTROL  [initandlisten] options: { net: { port: 27017 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "C:/Program Files (x86)/Git/data/rs1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "1.log" } }
+2017-09-19T21:48:38.664-0700 I STORAGE  [initandlisten] exception in initAndListen: 29 Data directory C:/Program Files (x86)/Git/data/rs1 not found., terminating
+2017-09-19T21:48:38.664-0700 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-09-19T21:48:38.677-0700 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-09-19T21:48:38.678-0700 I CONTROL  [initandlisten] now exiting
+2017-09-19T21:48:38.678-0700 I CONTROL  [initandlisten] shutting down with code:100

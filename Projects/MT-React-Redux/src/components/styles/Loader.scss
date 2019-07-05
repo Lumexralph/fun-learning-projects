@@ -1,0 +1,20 @@
+.loader-text {
+  text-align: center;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: -15px auto;
+    z-index: 2;
+    background-color:#cce3ea;
+    transition: 0.5s;
+
+    p {
+      display: contents;
+    }
+}
+
+.loader{
+  z-index: 2;
+  height: 0;
+  transition: 0.5s;
+}

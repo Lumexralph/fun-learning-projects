@@ -1,0 +1,103 @@
+
+/* header section of the page */
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+
+body {
+	background-color: #2F4F4F;
+}
+
+header {
+	/*background-color: blue;*/
+	text-align: center;
+	border: 1px solid white;
+  border-radius: 2%;
+	width: 60em;
+	height: 15em;
+	margin: 3% auto;
+	background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFM63zRoRjGbnK_-xY8QJV_NqcoxzGCN1CAgzhs0GyOzeWcRs9Jw);
+	background-repeat: no-repeat;
+	background-size: 60em 100%;
+  box-shadow: 2px 2px 3px black;
+}
+
+  #headerText {
+  	font-size: 4em;
+  	margin: 0.6em auto;
+  	font-family: 'Courgette', cursive;
+  	color: #008B8B;
+  	text-shadow: 1px 1px 3px black;
+  }
+
+  #headerNav {
+  	padding-top: 58px;
+  }
+
+  #nav {
+  	list-style-type: none;
+    width: 30%;
+    margin: auto ;
+ }
+
+   #nav li {
+   	display: inline;
+   	font-size: 1.2em;
+   	text-decoration: none;
+   }
+
+    #nav li a {
+    	text-decoration: none;
+    	text-shadow: 0.5px 0.5px 1px black;
+    }
+
+    #link {
+    	background-color: #D3D3D3;
+    	box-shadow: 1px 1px 3px black;
+    }
+
+    /* styling for carousel */
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+    }
+
+  #myCarousel {
+    margin: 5% auto;
+    width: 80%;
+  }
+
+  /*footer*/
+
+  footer {
+    background-color: #F5F5F5;
+    text-align: center;
+    height: 2em;
+    width: 70%;
+    margin: auto;
+    opacity: 0.7;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px black;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+
+  /*smaller screen size*/
+
+  @media only screen and (max-width: 500px) {
+    header {
+      max-width: 30em;
+      max-height: 10em;
+      margin-right: 40px;
+    }
+    #headerText {
+    font-size: 2em;
+    margin: 0.6em auto;
+    }
+    #nav {
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+     }
+  }
