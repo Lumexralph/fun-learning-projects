@@ -12,8 +12,8 @@
   "author": "Ogundele Olumide",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.1",
-    "express": "^4.15.4",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "mongodb": "^2.2.31",
     "mongoskin": "^2.1.0",
     "morgan": "^1.8.2"
