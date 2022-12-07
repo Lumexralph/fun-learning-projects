@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "assert": "^1.4.1",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.20.1",
     "consolidate": "^0.14.5",
-    "express": "^4.15.4",
+    "express": "^4.18.2",
     "mongodb": "^2.2.31",
     "nunjucks": "^3.0.1"
   }
